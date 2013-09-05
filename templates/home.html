@@ -1,3 +1,8 @@
-<h2>Home template</h2>
-
-<!-- Fill in our news data here -->
+<div class="reddit row" ng-repeat="post in ngModel">
+  <h3><span>{{score}}</span>{{post.data.title}}</h3>
+  <div>Posted by {{post.data.author}}</div>
+  <img src={{post.data.thumbnail}}></img>
+  <br/>
+  <button name="up" ng-click="upVote()">Up</button>
+  <button name="up" ng-click="downVote()">Down</button>
+</div>

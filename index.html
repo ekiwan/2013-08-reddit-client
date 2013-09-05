@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <!-- Bootstrap our AngularJS app and setup -->
-<html>
+<html ng-app="myApp">
 <head>
   <title>my Angular App</title>
 </head>
 <body>
 
-<h1>Hi</h1>
+<h1>Internet</h1>
+<div ng-controller="MainController">
+  <div prime-directive ng-model="reddits"></div>
+</div>
 
   <script type="text/javascript" src="js/vendor/angular/angular.js"></script>
   <script type="text/javascript" src="js/vendor/angular-route/angular-route.js"></script>
