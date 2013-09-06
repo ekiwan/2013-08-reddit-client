@@ -6,18 +6,10 @@ angular.module('myApp.controllers', [])
       $scope.reddits = data.data.children;
       console.log(data.data.children);
     })
-    
+
     .error(function(data, status) {
       console.log('great job');
     });
-    
-  $scope.score = 0;
 
-  $scope.upVote = function() {
-    score++;
-  }
 
-  $scope.downVote = function() {
-    score--;
-  }
-}])
+}]);

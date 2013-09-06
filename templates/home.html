@@ -1,8 +1,6 @@
-<div class="reddit row" ng-repeat="post in ngModel">
-  <h3><span>{{score}}</span>{{post.data.title}}</h3>
-  <div>Posted by {{post.data.author}}</div>
-  <img src={{post.data.thumbnail}}></img>
-  <br/>
-  <button name="up" ng-click="upVote()">Up</button>
-  <button name="up" ng-click="downVote()">Down</button>
-</div>
+<h3><span>{{score}}</span>{{ngModel.data.title}}</h3>
+<div>Posted by {{ngModel.data.author}}</div>
+<img src={{ngModel.data.thumbnail}}></img>
+<br/>
+<button name="up" ng-click="upVote()">Up</button>
+<button name="up" ng-click="downVote()">Down</button>
