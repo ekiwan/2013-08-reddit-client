@@ -12,4 +12,9 @@ angular.module('myApp.controllers', [])
     });
 
 
+}])
+
+.controller('LoginController', ['$scope', function($scope) {
+  $scope.login = 'huh';
+  alert('please sign my guestbook');
 }]);
