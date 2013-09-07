@@ -14,7 +14,16 @@ angular.module('myApp.controllers', [])
 
 }])
 
-.controller('LoginController', ['$scope', function($scope) {
-  $scope.login = 'huh';
+.controller('LoginController', ['$scope', 'SessionService', function($scope, SessionService) {
+  //SessionService.signup(username, password);
+
+  $scope.username = null;
+  $scope.password = null;
+
+  $scope.submitSignup = function() {
+    console.log("submitting signup stuff");
+    SessionService.signup($scope.username, $scope.password);
+  };
+
   alert('please sign my guestbook');
 }]);
